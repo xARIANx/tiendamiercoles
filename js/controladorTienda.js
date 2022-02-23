@@ -1,3 +1,4 @@
+/*
 //ENTRADAS==VARIABLES==CONSTANTES
 let nombreProducto="CD Wu Tang-Clan"
 let precioProducto=400000
@@ -21,4 +22,25 @@ console.log("Su nombre es: "+NOMBRE_CLIENTE+"Y su producto es: "+nombreProducto)
 console.log(`Su nombre es: ${NOMBRE_CLIENTE} y su producto es: ${nombreProducto}`)
 console.log("******")
 console.log(productos)
-console.log(productos2[2])
+console.log(productos2[2]) */
+
+//Controlando etiquetas
+
+//1. crear una variable para guardar una etiqueta
+let etiquetaTitulo=document.getElementById("titulo")
+console.log(etiquetaTitulo)
+
+//2. como modificar el texto de una etiqueta 
+etiquetaTitulo.textContent="Holi mundo"
+
+let etiquetaMenu=document.getElementById("titulonavbar")
+console.log(etiquetaMenu)
+etiquetaMenu.textContent="Hip Hop & Rap"
+
+//Controlando una imagen
+let etiquetaFoto=document.getElementById("fotoWuTang1")
+etiquetaFoto.src="img/WuTang1.jpg"
+
+//Cambiar el estilo de la etiqueta
+etiquetaTitulo.classList.add("text-center")
+etiquetaTitulo.classList.add("text-danger")
