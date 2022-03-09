@@ -27,7 +27,7 @@ console.log(productos2[2]) */
 //Controlando etiquetas
 
 //1. crear una variable para guardar una etiqueta
-let etiquetaTitulo=document.getElementById("titulo")
+/*let etiquetaTitulo=document.getElementById("titulo")
 console.log(etiquetaTitulo)
 
 //2. como modificar el texto de una etiqueta 
@@ -43,4 +43,37 @@ etiquetaFoto.src="img/WuTang1.jpg"
 
 //Cambiar el estilo de la etiqueta
 etiquetaTitulo.classList.add("text-center")
-etiquetaTitulo.classList.add("text-danger")
+etiquetaTitulo.classList.add("text-danger")*/
+
+//TIENDA
+
+/*let nombreProducto="CD Wu Tang-Clan"
+let precioProducto=350000
+let descripcionProducto="CD Album Cream Wu Tang-Clan"
+
+let nombreProducto2="Camiseta de N.W.A"
+let precioProducto2=700000
+let descripcionProducto2="Camiseta original N.W.A"*/
+
+//TIENDA
+let productosNombre=["CD Wu Tang-Clan","Camiseta N.W.A"]
+let productosPrecio=[350000,700000]
+let precioPromocion=[true,false]
+
+console.log(productosNombre[1])
+console.log(productosNombre)
+
+//creando objetos con JS
+let usuario={
+
+    nombre:"Bruno Diaz",
+    edad:48,
+    amigos:["Ice Cub", "2pac","Fat Joe"]
+
+}
+
+console.log(usuario)
+//para acceder a un solo atributo de un objeto
+console.log(usuario.nombre)
+console.log(usuario.amigos)
+console.log(usuario.amigos[1])
