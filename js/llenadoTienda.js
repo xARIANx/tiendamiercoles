@@ -39,24 +39,50 @@ productos.forEach(function(producto){
     let tarjeta=document.createElement("div")
     tarjeta.classList.add("card")
     tarjeta.classList.add("h-100")
+    tarjeta.setAttribute("style","margin-top:50px;")
 
     //necesito un img con la clase card-img-top
     let foto=document.createElement("img")
     foto.classList.add("card-img-top")
     foto.src=producto.foto
 
-    //crear una clase h4 para ponerle el titulos a los productos
+    //crear una clase h4 para ponerle el titulos a los productos con la clase text-center
     let titulo=document.createElement("h4")
     titulo.classList.add("text-center")
     //para mostrar un texto es .textContent
     titulo.textContent=producto.nombre
 
+    let descripcion=document.createElement("p")
+    descripcion.classList.add("text-center")
+    descripcion.textContent=producto.descripcion
+
+    let precio=document.createElement("h4")
+    precio.classList.add("text-center")
+    precio.textContent=producto.precio
+
+    let boton=document.createElement("button")
+    boton.classList.add("text-center")
+    boton.textContent="Añadir al carrito"
+
+    //let boton2=document.createElement("button")
+    //boton2.classList.add("text-center")
+    //boton2,textContent="Ver objeto"
+
 
     //3. PADRES E HIJOS
     tarjeta.appendChild(foto)
     tarjeta.appendChild(titulo)
+    tarjeta.appendChild(descripcion)
+    tarjeta.appendChild(precio)
+    tarjeta.appendChild(boton)
+    //tarjeta.appendChild(boton2)
+
+
+<    
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
+
+    
 
 })
 
