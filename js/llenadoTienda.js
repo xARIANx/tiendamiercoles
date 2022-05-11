@@ -1,4 +1,5 @@
-//CREANDO UN ARREGLO DE OBJETOS
+export function llenarTienda(){
+    //CREANDO UN ARREGLO DE OBJETOS
 
 let productos=[
 
@@ -25,9 +26,9 @@ let fila=document.getElementById("fila")
 //COMO RRECORER UN ARREGLO CON JS
 //TENER UN ARREGLO
 productos.forEach(function(producto){
-    console.log(producto.nombre)
-    console.log(producto.precio)
-    console.log(producto.foto)
+    //console.log(producto.nombre)
+    //console.log(producto.precio)
+    //console.log(producto.foto)
 
     //pintando etiquetas
 
@@ -56,13 +57,13 @@ productos.forEach(function(producto){
     descripcion.classList.add("text-center")
     descripcion.textContent=producto.descripcion
 
-    let precio=document.createElement("h4")
+    let precio=document.createElement("h3")
     precio.classList.add("text-center")
     precio.textContent=producto.precio
 
     let boton=document.createElement("button")
-    boton.classList.add("text-center")
-    boton.textContent="Añadir al carrito"
+    boton.classList.add("btn", "text-center", "btn-primary")
+    boton.textContent="Ver Objeto"
 
     //let boton2=document.createElement("button")
     //boton2.classList.add("text-center")
@@ -78,13 +79,16 @@ productos.forEach(function(producto){
     //tarjeta.appendChild(boton2)
 
 
-<    
+    
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
 
     
 
 })
+}
 
 
-//siempre verificar los errores en console
+
+
+

@@ -24,7 +24,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="#"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">Registro</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/arian.castroescudero">Contacto</a>
@@ -51,6 +51,37 @@
           </nav>
 
     </header>
+    
+    <section>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body">
+    
+          <h5 id="offcanvasTopLabel">Registro</h5>
+          
+                <form  id="formularioregistro">
+    
+                <div class="row justify-content-around">
+                  <div class="mb-3 col-5">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">          
+                  </div>
+    
+                  <div class="mb-3 col-5">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                  <button type="submit" class="btn btn-primary col-4" id="botonregistro">Registrarse</button>
+                </div>
+    
+                </form>
+                   
+        </div>
+      </div>
+        </section>
+    
     <main>
 
         <img src="img/WuTang1.jpg" alt="fotobanner" class="w-100 img-fluid">
@@ -82,6 +113,7 @@
                 </div>
             </div>
         </section>
+
 
     </main>
 
@@ -133,6 +165,11 @@
 
     <script src="js/llenadoTienda.js"></script>
     <script src="js/eventos.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registro.js" type="module"></script>
+
+    <script>new WOW().init();</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -143,7 +180,7 @@
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
               <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
             </a>
-            <span class="text-muted">&copy; 2022 Arian</span>
+            <span class="text-muted">&copy; </span>
           </div>
 
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
